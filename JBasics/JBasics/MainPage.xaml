@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:JBasics"
+             x:Class="JBasics.MainPage">
+
+    <StackLayout Padding=" 10,5,10,5">
+        <StackLayout Orientation="Vertical" Padding="5,5,5,5">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Apples : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="Apple" HorizontalOptions="EndAndExpand" WidthRequest="100"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Bananas : " HorizontalOptions="StartAndExpand" />
+                <Entry x:Name="Bananas" HorizontalOptions="EndAndExpand" WidthRequest="100" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Oranges : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="Oranges" HorizontalOptions="EndAndExpand" WidthRequest="100" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Number of Fruits"  Clicked="TotalButton_Clicked"/>
+                <Button Text="Reset" Clicked="Clear_Clicked"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Number of Fruits : " HorizontalOptions="StartAndExpand" />
+                <Entry x:Name="Total" HorizontalOptions="EndAndExpand" WidthRequest="100" />
+            </StackLayout>
+
+        </StackLayout>
+        
+        
+        
+    </StackLayout>
+
+</ContentPage>

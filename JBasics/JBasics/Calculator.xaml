@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JBasics.Calculator">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="10,10,10,10">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="First Number : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="FirstNum" WidthRequest="100" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Second Number : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="SecondNum" WidthRequest="100" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="+" Clicked="PlusButton_Clicked"/>
+                <Button Text="-" Clicked="MinusButton_Clicked"/>
+                <Button Text="*" Clicked="MulButton_Clicked"/>
+                <Button Text="/" Clicked="DivButton_Clicked"/>
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Result : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="result" WidthRequest="100" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Reset" Clicked="ResetButton_Clicked"/>
+                <Button Text="Stop" Clicked="StopButton_Clicked"/>
+             
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

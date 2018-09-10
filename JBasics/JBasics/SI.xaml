@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JBasics.SI">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="10,10,10,10">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Principal : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="Principal" WidthRequest="100" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Rate(%) : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="Rate" WidthRequest="100" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Time(In Years) : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="Time" WidthRequest="100" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Calculate SI" Clicked="SICalcButton_Clicked"/>
+                <Button Text="Reset" Clicked="StopButton_Clicked"/>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Simple Interest : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="result" WidthRequest="100" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

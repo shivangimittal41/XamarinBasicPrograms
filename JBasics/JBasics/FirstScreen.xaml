@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JBasics.FirstScreen" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding=" 10,10,10,10" HorizontalOptions="CenterAndExpand">
+            <Label Text="Choose from the following Modules to execute :"  FontSize="Medium"/>
+            <StackLayout Orientation="Vertical" Padding=" 5,5,5,5">
+                <Button Text="Total Number Of Fruits"  Clicked="TotalFruits_Clicked"/>
+                <Button Text="Wrapped Text"  Clicked="WrappedText_Clicked"/>
+                <Button Text="Calculator"  Clicked="CalcButton_Clicked"/>
+                <Button Text="Simple Interest"  Clicked="SIButton_Clicked"/>
+                <Button Text="Area of Shapes"  Clicked="AreaButton_Clicked"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

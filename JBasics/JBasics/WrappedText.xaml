@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JBasics.WrappedText">
+    <RelativeLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+        <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                     Padding=" 10,10,10,10" >
+            <StackLayout Orientation="Horizontal" Padding="5,5,5,5">
+                <Label Text="Text Message : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="UserText" HorizontalOptions="EndAndExpand" WidthRequest=" 200"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" 
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                         Padding="5,5,5,5">
+                <Button Text="*" Clicked="StarButton_Clicked"/>
+                <Button Text="#" Clicked="HashButton_Clicked"/>
+                <Button Text="%" Clicked="PercentButton_Clicked"/>
+                <Button Text="&quot;" Clicked="DoubleQButton_Clicked"/>
+
+            </StackLayout>
+            <Button Text="Stop" Clicked="StopButton_Clicked" HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout Orientation="Horizontal" Padding="5,5,5,5">
+                <Label Text="Altered Text : " HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="AlteredText" HorizontalOptions="EndAndExpand" WidthRequest=" 200"/>
+            </StackLayout>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>
